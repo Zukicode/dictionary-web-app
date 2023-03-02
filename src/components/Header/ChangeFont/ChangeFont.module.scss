@@ -1,0 +1,68 @@
+.changeFont {
+	width: 100%;
+	position: relative;
+
+	.openList {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		cursor: pointer;
+
+		@media (max-width: 400px) {
+			gap: 5px;
+		}
+
+		p {
+			font-size: 17px;
+
+			@media (max-width: 400px) {
+				font-size: 14px;
+			}
+		}
+
+		svg {
+			position: relative;
+			top: 1px;
+			font-size: 21px;
+			color: var(--color-ui-second);
+
+			@media (max-width: 400px) {
+				font-size: 14px;
+			}
+		}
+	}
+
+	.dropDownList {
+		width: 150px;
+		border-radius: 10px;
+		background-color: red;
+		padding: 20px;
+		position: absolute;
+		top: 30px;
+		left: -40px;
+		margin-top: 5px;
+		background-color: var(--color-bg);
+		box-shadow: var(--shadow);
+		z-index: 22;
+
+		ul {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			gap: 4px;
+
+			li {
+				list-style: none;
+				font-size: 17px;
+				cursor: pointer;
+				user-select: none;
+
+				&.active {
+					color: var(--color-ui);
+					text-decoration: line-through;
+					cursor: not-allowed;
+				}
+			}
+		}
+	}
+}

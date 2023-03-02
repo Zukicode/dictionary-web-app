@@ -1,0 +1,56 @@
+@use './normalize.scss';
+
+:root {
+	--color-gray: #9a9a9a;
+	--shadow: 0px 0px 10px #13171b;
+	--fw-bd: 700;
+	--fw-md: 400;
+}
+
+body[data-theme='dark'] {
+	--color-text: #e9e8e8;
+	--color-ui-rgb: rgba(233, 232, 232, 0.1);
+	--color-ui-rgb-btn: rgba(233, 232, 232, 0.5);
+	--color-bg: #20262e;
+	--color-ui: #913175;
+	--color-ui-second: #cd5888;
+}
+
+body[data-theme='light'] {
+	--color-text: #20262e;
+	--color-ui-rgb: rgba(32, 38, 46, 0.1);
+	--color-ui-rgb-btn: rgba(32, 38, 46, 0.5);
+	--color-bg: #e9e8e8;
+	--color-ui: #cd5888;
+	--color-ui-second: #913175;
+}
+
+body {
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	transition: all 0.4s;
+}
+
+input,
+button {
+	font-family: sans-serif;
+}
+
+.App {
+	width: 100%;
+	height: 100%;
+}
+
+//scrolling
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-ui-second);
+	border-radius: 10px;
+}

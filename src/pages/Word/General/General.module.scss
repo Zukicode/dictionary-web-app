@@ -1,0 +1,63 @@
+.general {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0px;
+	gap: 5px;
+
+	.text {
+		h1 {
+			font-size: 54px;
+
+			@media (max-width: 400px) {
+				font-size: 44px;
+			}
+
+			@media (max-width: 350px) {
+				font-size: 29px;
+			}
+		}
+
+		p {
+			color: var(--color-ui-second);
+			font-size: 20px;
+
+			@media (max-width: 310px) {
+				font-size: 16px;
+			}
+		}
+	}
+
+	.audio {
+		button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50px;
+			padding: 10px;
+			border: none;
+			cursor: pointer;
+			background-color: rgba(hsl(335, 54%, 58%), 0.2);
+			transition: all 0.3s ease-in-out;
+
+			@media (max-width: 310px) {
+				padding: 5px;
+			}
+
+			&:hover {
+				background-color: rgba(hsl(335, 54%, 58%), 1);
+
+				svg {
+					color: #913175;
+				}
+			}
+
+			svg {
+				position: relative;
+				left: 2px;
+				color: hsl(335, 54%, 58%);
+			}
+		}
+	}
+}

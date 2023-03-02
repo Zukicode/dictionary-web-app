@@ -1,0 +1,14 @@
+
+Корисні ресурси:
+	Макет: https://www.frontendmentor.io/challenges/dictionary-web-app-h5wwnyuKFL
+	API: https://dictionaryapi.dev/
+	Цвітова палітра: https://colorhunt.co/palette/20262e913175cd5888e9e8e8
+
+1)Визначитись з кольроми дизайну
+2)Зміна теми
+3)Адаптивний дизайн
+4)Дані з api
+5)Шукати слова за допомогою поля введення
+6)Зміна шрифта serif-monospace-sans serif
+7)Відтворіть аудіофайл для слова, коли він доступний
+8)Попробувати зробити анімації
